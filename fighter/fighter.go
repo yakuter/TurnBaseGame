@@ -17,9 +17,9 @@ func (f Fighter) Hit() int {
 	if f.Stamina >= f.Staminas[f.Weapon] {
 		levelEffect := int(math.Ceil(float64(f.Level) * 0.1))
 		return f.Attacks[f.Weapon] + levelEffect
-	} else {
-		return 0
 	}
+
+	return 0
 }
 
 func (f *Fighter) TakeDamage(damage int) {

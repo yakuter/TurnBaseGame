@@ -19,10 +19,9 @@ func (d Druid) Hit() int {
 	if d.Mana >= d.Manas[d.Animal] {
 		levelEffect := int(math.Ceil(float64(d.Level) * 0.1))
 		return d.Attacks[d.Animal] + levelEffect
-	} else {
-		return 0
 	}
 
+	return 0
 }
 
 func (d *Druid) TakeDamage(damage int) {

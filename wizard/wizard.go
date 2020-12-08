@@ -19,9 +19,9 @@ func (w Wizard) Hit() int {
 	if w.Mana >= w.Manas[w.Magic] {
 		levelEffect := int(math.Ceil(float64(w.Level) * 0.1))
 		return w.Attacks[w.Magic] + levelEffect
-	} else {
-		return 0
 	}
+
+	return 0
 }
 
 func (w *Wizard) TakeDamage(damage int) {
