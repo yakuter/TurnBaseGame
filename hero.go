@@ -9,10 +9,11 @@ import (
 	"strings"
 	"sync"
 	"time"
-	"turnBaseGame/druid"
-	IHero "turnBaseGame/fightHero"
-	"turnBaseGame/fighter"
-	"turnBaseGame/wizard"
+
+	"github.com/borakasmer/TurnBaseGame/druid"
+	IHero "github.com/borakasmer/TurnBaseGame/fightHero"
+	"github.com/borakasmer/TurnBaseGame/fighter"
+	"github.com/borakasmer/TurnBaseGame/wizard"
 )
 
 func fight(attacker IHero.FightHero, target IHero.FightHero) {

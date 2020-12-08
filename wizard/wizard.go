@@ -2,7 +2,8 @@ package wizard
 
 import (
 	"math"
-	hero "turnBaseGame/heroCharacter"
+
+	hero "github.com/borakasmer/TurnBaseGame/heroCharacter"
 )
 
 type (
